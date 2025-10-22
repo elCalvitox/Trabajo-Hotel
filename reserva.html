@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>Haga su reserva</h1>
+
+    <form method="get" action="procesareserva.php">
+
+    <fieldset>
+
+        <legend>Datos Personales</legend>
+
+    <p>
+        <label for="nom">Nombre:</label>
+        <input type="text" maxlength="6" name="nombre" id="nom" placeholder="Escriba su nombre aqui" autofocus required>
+    </p>
+
+    <p>
+        <label for="ape">Apellido:</label>
+        <input type="text" maxlength="100" name="apellido" id="ape" placeholder="Escriba su apellido aqui " required> 
+    </p>
+
+    <p>
+        <label for="dni">DNI:</label>
+        <input type="text" maxlength="10" name="dni" id="dni" placeholder="DNI" required> 
+    </p>
+    </fieldset>
+
+<fieldset>
+    <legend>Datos de su estancia</legend>
+
+
+    <p>
+        <label for="Individual"></label>Individual:
+        <input type="radio" value="H" checked id="Individual" name="Habitación">
+
+<p></p>
+
+        <label for="Doble"></label>Doble:
+        <input type="radio" value="M"
+        checked
+        id="Doble" name="Habitación">
+
+<p></p>
+
+        <label for="Triple"></label>Triple:
+        <input type="radio" value="Triple" checked id="Triple" name="Habitación">
+
+    </p>
+</form>
+
+
+        <p>
+            <label for="num"></label>Numero de personas:
+            <select name="prov" id="prov">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            </select>
+</p>
+
+    <p>
+        <label for="ape">Llevo Mascotas:</label>
+        <input type="checkbox"  name="mascota" id="mas" > 
+    </p>
+
+
+    <p>
+        <label for="fecha">Fecha de llegada:</label>
+        <input type="date" name="fecha" id="fecha">
+    </p>
+
+            <p>
+                <label for="hora">Hora de llegada:</label>
+                <input type="time" name="hora" id="hora">
+            </p>
+
+<a href="index.html">Volver a la pagina principal</a>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Reiniciar</button>
+</fieldset>
+</body>
+</html>

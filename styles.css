@@ -1,0 +1,22 @@
+h1 {
+    color: blue;
+}
+
+img {
+    width: 300px;
+}
+
+table {
+    border: 1px solid blue;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid blue;
+    padding: 8px;
+    text-align: center;
+}
+
+li {
+    color:darkviolet
+}
